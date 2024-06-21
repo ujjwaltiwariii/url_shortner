@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>wait...</title>
+<script type="text/javascript">
+    function delayURL(url, time) {if (document.referrer != url) {
+            setTimeout("window.location.href = '" + url + "'", time);
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <script type="text/javascript">
+        delayURL("{{url}}", 2000);
+    </script>
+    <p>If you are not redirected in 2 seconds, click <a href="{{url}}">here</a></p>
+       
+       
+       
+       
+       
+       
+       
+</body>
+</html>
